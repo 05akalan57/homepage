@@ -17,9 +17,9 @@ const BlogIndex = ({ data, location }) => {
       <Layout location={location}>
         <SEO title={siteTitle} />
         <p>
-          No blog posts found. Add markdown posts to "content/blog" (or the
-          directory you specified for the "gatsby-source-filesystem" plugin in
-          gatsby-config.js).
+          Blog yazısı bulunamadı. "content/blog"a (veya gatsby-config.js'de
+          "gatsby-source-filesystem" eklentisi için belirttiğiniz dizine)
+          işaretleme gönderileri ekleyin.
         </p>
       </Layout>
     )
