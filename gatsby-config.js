@@ -4,8 +4,7 @@ module.exports = {
     indexTitle: "Berat Bozkurt | front-end developer",
     author: {
       name: `Berat Bozkurt`,
-      info:
-        "I'm Berat Bozkurt. I'm 21 years old. I'm a developer. I love to write about anything. Don't forget to subscribe me and if you love the article, please like and comment, Hi youtube!",
+      info: "I'm Berat Bozkurt. I'm 21 years old. I'm a developer. I love to write about anything. Don't forget to subscribe me and if you love the article, please like and comment, Hi youtube!",
       summary: `Freelancer, front-end developer, open source, writing, tweeting, shutterbug`,
     },
     description: `Berat Bozkurt, front-end developer, photography, blogging`,
@@ -17,7 +16,6 @@ module.exports = {
       instagram: "https://instagram.com/beratbozkurt0",
       linkedin: "https://www.linkedin.com/in/beratbozkurt/",
       superpeer: "https://superpeer.com/berat",
-      flickr: "https://www.flickr.com/photos/beratbozkurt0/",
       substack: "https://beratbozkurt.substack.com/subscribe",
     },
   },
@@ -27,13 +25,6 @@ module.exports = {
       options: {
         output: `/sitemap.xml`,
       },
-    },
-    {
-      resolve: "gatsby-source-flickr",
-      options: {
-        api_key: process.env.FLICKR_API_KEY,
-        user_id: "beratbozkurt0"
-      }
     },
     `gatsby-plugin-sass`,
     {
@@ -111,14 +102,15 @@ module.exports = {
             options: {
               wrapperStyle: `margin-bottom: 1.0725rem`,
             },
-          }, {
+          },
+          {
             resolve: `gatsby-remark-vscode`,
             options: {
               theme: {
-                default: 'Quiet Light',
-                parentSelector: { 'div#dark': 'Monokai Dimmed' }
+                default: "Quiet Light",
+                parentSelector: { "div#dark": "Monokai Dimmed" },
               },
-            }
+            },
           },
           {
             resolve: `gatsby-remark-images`,

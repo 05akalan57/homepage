@@ -1,5 +1,5 @@
 import React from "react"
-import projects from '../../../content/projects.js'
+import projects from "../../../content/projects.js"
 
 const ProjectList = () => {
   return (
@@ -12,20 +12,17 @@ const ProjectList = () => {
                 <h2>
                   <span itemProp="headline">{item.name}</span>
                 </h2>
-                <b>
-                  {item.icon}
-                </b>
+                <b>{item.icon}</b>
               </header>
               <ul>
-                {item.keywords.map((tag, key) => <li key={key}>{tag}</li>)}
+                {item.keywords.map((tag, key) => (
+                  <li key={key}>{tag}</li>
+                ))}
               </ul>
-              <p>
-                {item.description}
-              </p>
-              </a>
+              <p>{item.description}</p>
+            </a>
           </li>
-        )
-        )}
+        ))}
       </ol>
     </div>
   )

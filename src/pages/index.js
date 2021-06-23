@@ -40,7 +40,7 @@ const BlogIndex = ({ data, location }) => {
         </section>
         <section className="all-project-list">
           <h3>Projeler</h3>
-          <ProjectList/>
+          <ProjectList />
         </section>
       </section>
     </Layout>

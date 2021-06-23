@@ -35,9 +35,6 @@ const Header = () => {
             <Link activeClassName="active" to="/blog">
               blog
             </Link>
-            <Link activeClassName="active" to="/photos">
-              fotoğraflar
-            </Link>
             <button onClick={theme.toggleBlack}>
               {!theme.black ? (
                 <Moon width="20" fill="#656565" stroke="#656565" />

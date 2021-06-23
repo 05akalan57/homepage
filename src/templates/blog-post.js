@@ -100,7 +100,7 @@ const BlogPostTemplate = ({ data, location }) => {
             itemProp="articleBody"
           />
         </article>
-        <Subscriber substackUrl={data.site.siteMetadata.social.substack}/>
+        <Subscriber substackUrl={data.site.siteMetadata.social.substack} />
         <SocialShare
           fullURL={fullURL}
           title={post.frontmatter.title}
