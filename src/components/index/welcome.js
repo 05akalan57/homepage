@@ -7,7 +7,7 @@ const Welcome = () => {
     query BioQuery {
       avatar: file(absolutePath: { regex: "/profile-pic.jpg/" }) {
         childImageSharp {
-          fixed(width: 475, height: 475, quality: 95) {
+          fixed(width: 1000, height: 1000, quality: 100) {
             ...GatsbyImageSharpFixed
           }
         }
@@ -21,7 +21,6 @@ const Welcome = () => {
           social {
             twitter
             github
-            vsco
           }
         }
       }
@@ -30,7 +29,7 @@ const Welcome = () => {
 
   const author = data.site.siteMetadata?.author
   const avatar = data?.avatar?.childImageSharp?.fixed
-  const { twitter, github, vsco } = data.site.siteMetadata?.social
+  const { twitter, github } = data.site.siteMetadata?.social
 
   return (
     <section className="welcome">
@@ -43,7 +42,7 @@ const Welcome = () => {
           className="bio-avatar"
         />
       )}
-      <h2>Selam, ben Berat</h2>
+      <h2>Selam, ben Muhammet</h2>
       <p className="display-font">
         front-end developer olarak çalışıyorum. Ayrıca yararlı bulduğum
         içerikleri ve deneyimlerimi{" "}
@@ -53,10 +52,6 @@ const Welcome = () => {
         'da, açık kaynak projelerimi{" "}
         <a href={github} rel="noreferrer" target="_blank">
           github
-        </a>
-        'ta, gözüme güzel gelen her şeyi{" "}
-        <a href={vsco} rel="noreferrer" target="_blank">
-          vsco
         </a>
         'da paylaşıyorum.
       </p>

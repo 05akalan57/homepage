@@ -5,7 +5,6 @@
 @import "./utils/mixin";
 @import "./utils/variable";
 
-
 /*
   BASE MODULES
 */
@@ -18,17 +17,16 @@
 /*
   COMPONENT
 */
- 
-@import './components/header';
-@import './components/welcome';
-@import './components/page';
-@import './components/blogList';
-@import './components/footer';
-@import './components/post';
-@import './components/blockquote';
-@import './components/syntax';
-@import './components/social';
-@import './components/prevNextPost';
-@import './components/webmention';
-@import './components/subscriber';
-@import './components/projectList';
+
+@import "./components/header";
+@import "./components/welcome";
+@import "./components/page";
+@import "./components/blogList";
+@import "./components/footer";
+@import "./components/post";
+@import "./components/blockquote";
+@import "./components/syntax";
+@import "./components/social";
+@import "./components/prevNextPost";
+@import "./components/webmention";
+@import "./components/projectList";

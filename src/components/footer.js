@@ -10,8 +10,6 @@ export default function Footer() {
             twitter
             github
             instagram
-            linkedin
-            superpeer
           }
         }
       }
@@ -32,15 +30,17 @@ export default function Footer() {
         <a href={social.instagram} target="_blank" rel="noreferrer">
           instagram
         </a>
-        <a href={social.linkedin} target="_blank" rel="noreferrer">
-          linkedin
-        </a>
-        <a href={social.superpeer} target="_blank" rel="noreferrer">
-          superpeer
-        </a>
       </nav>
       <div className="email">
-        <b>me</b> at <b>beratbozkurt</b> dot <b>net</b>
+        Bu sitenin teması{" "}
+        <a
+          href="https://github.com/berat/homepage"
+          target="_blank"
+          rel="noreferrer"
+        >
+          <b>Berat Bozkurt'un</b>
+        </a>{" "}
+        açık kaynak projesinden alınmıştır.
       </div>
     </footer>
   )

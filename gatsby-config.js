@@ -1,22 +1,18 @@
 module.exports = {
   siteMetadata: {
-    title: `Berat Bozkurt`,
-    indexTitle: "Berat Bozkurt | front-end developer",
+    title: `Muhammet Emin AKALAN`,
+    indexTitle: "Muhammet Emin AKALAN | Websitem",
     author: {
-      name: `Berat Bozkurt`,
-      info: "I'm Berat Bozkurt. I'm 21 years old. I'm a developer. I love to write about anything. Don't forget to subscribe me and if you love the article, please like and comment, Hi youtube!",
-      summary: `Freelancer, front-end developer, open source, writing, tweeting, shutterbug`,
+      name: `Muhammet Emin AKALAN`,
+      info: "Ben Muhammet Emin AKALAN. 19 yaşındayım. Ben bir geliştiriciyim. Herhangi bir konuda yazmayı seviyorum.",
+      summary: `Serbest çalışan, ön uç geliştirici, açık kaynak`,
     },
-    description: `Berat Bozkurt, front-end developer, photography, blogging`,
-    siteUrl: `https://beratbozkurt.net/`,
+    description: `Muhammet Emin AKALAN, front-end developer, photography, blogging`,
+    siteUrl: `https://homepage-demo.vercel.app/`,
     social: {
-      twitter: `https://twitter.com/beratbozkurt0`,
-      vsco: "https://vsco.co/beratbozkurt0",
-      github: "https://github.com/berat",
-      instagram: "https://instagram.com/beratbozkurt0",
-      linkedin: "https://www.linkedin.com/in/beratbozkurt/",
-      superpeer: "https://superpeer.com/berat",
-      substack: "https://beratbozkurt.substack.com/subscribe",
+      twitter: `https://twitter.com/05akalan57`,
+      github: "https://github.com/05akalan57",
+      instagram: "https://instagram.com/muhammeteminakalan",
     },
   },
   plugins: [
@@ -38,17 +34,14 @@ module.exports = {
       resolve: "gatsby-plugin-react-svg",
       options: {
         rule: {
-          include: /icons/, // See below to configure properly
+          include: /icons/,
         },
       },
     },
     {
       resolve: `gatsby-transformer-remark`,
       options: {
-        plugins: [
-          `gatsby-remark-reading-time`,
-          // ...
-        ],
+        plugins: [`gatsby-remark-reading-time`],
       },
     },
     {
@@ -68,14 +61,14 @@ module.exports = {
           {
             resolve: `gatsby-plugin-webmention`,
             options: {
-              username: "beratbozkurt.net", // webmention.io username
+              username: "homepage-demo.vercel.app",
               identity: {
-                github: "berat",
-                twitter: "beratbozkurt0", // no @
+                github: "05akalan57",
+                twitter: "05akalan57",
               },
               mentions: true,
               pingbacks: true,
-              domain: "beratbozkurt.net",
+              domain: "homepage-demo.vercel.app",
               token: process.env.WEBMENTIONS_TOKEN,
             },
           },
@@ -86,14 +79,14 @@ module.exports = {
               ratio: 1.77,
               height: 400,
               related: false,
-              noIframeBorder: true, //Optional: Disable insertion of <style> border: 0
+              noIframeBorder: true,
               urlOverrides: [
                 {
                   id: "youtube",
                   embedURL: videoId =>
                     `https://www.youtube-nocookie.com/embed/${videoId}`,
                 },
-              ], //Optional: Override URL of a service provider, e.g to enable youtube-nocookie support
+              ],
               containerClass: "embedVideo-container",
             },
           },
@@ -123,29 +116,20 @@ module.exports = {
         ],
       },
     },
-    {
-      resolve: `gatsby-plugin-google-analytics`,
-      options: {
-        trackingId: `UA-163663946-1`,
-        head: true,
-      },
-    },
     `gatsby-plugin-feed`,
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Berat Bozkurt - front-end developer`,
-        short_name: `BeratBozkurt`,
+        name: `Muhammet Emin AKALAN`,
+        short_name: `MEA`,
         start_url: `/`,
         background_color: `#ffffff`,
         theme_color: `#e4561b`,
-        display: `minimal-ui`,
+        display: `standalone`,
         icon: `content/assets/icon.png`,
       },
     },
     `gatsby-plugin-react-helmet`,
-    // this (optional) plugin enables Progressive Web App + Offline functionality
-    // To learn more, visit: https://gatsby.dev/offline
-    // `gatsby-plugin-offline`,
+    `gatsby-plugin-offline`,
   ],
 }

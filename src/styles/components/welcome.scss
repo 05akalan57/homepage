@@ -26,9 +26,9 @@ section.welcome {
   div.bio-avatar {
     grid-area: image;
     border-radius: 10px;
-    max-width: 175px ;
-    max-height: 175px ;
-    
+    max-width: 175px;
+    max-height: 175px;
+
     @include responsive(xs) {
     }
   }
@@ -48,10 +48,10 @@ section.welcome {
     color: var(--text-color);
     font-size: 1.4rem;
     padding-top: 10px;
-    a{
+    a {
       color: var(--primary-color);
       font-weight: $weight-semibold;
-      &:hover{
+      &:hover {
         border-color: var(--secondary-color);
       }
     }

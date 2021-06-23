@@ -5,7 +5,6 @@ import Image from "gatsby-image"
 import Layout from "../components/layout.js"
 import SEO from "../components/seo.js"
 import Webmentions from "../components/post/webmention.js"
-import Subscriber from "../components/post/subscriber.js"
 import SocialShare from "../components/post/socialShare.js"
 
 import TwitterIcon from "../assets/icons/twitter.svg"
@@ -20,7 +19,7 @@ const BlogPostTemplate = ({ data, location }) => {
   const siteTitle = data.site.siteMetadata?.title || `Title`
   const categories = post.frontmatter.category
   const { previous, next, webmention } = data
-  const fullURL = `${data.site.siteMetadata?.siteUrl}blog${post.fields.slug}`
+  const fullURL = `${data.site.siteMetadata?.siteUrl}/blog${post.fields.slug}`
   const commentCount = webmention.nodes?.filter(
     m => m.wmProperty === "in-reply-to"
   ).length
@@ -30,7 +29,7 @@ const BlogPostTemplate = ({ data, location }) => {
       "https://homepage-api.vercel.app/api/like?name=" +
         post.fields.slug.slice(1, post.fields.slug.length - 1),
       {
-        method: "GET", // or 'PUT'
+        method: "GET",
         mode: "cors",
         headers: {
           "Content-Type": "application/json",
@@ -45,7 +44,7 @@ const BlogPostTemplate = ({ data, location }) => {
 
   const onLike = () => {
     fetch("https://homepage-api.vercel.app/api/like", {
-      method: "POST", // or 'PUT'
+      method: "POST",
       mode: "cors",
       headers: {
         "Content-Type": "application/json",
@@ -100,7 +99,6 @@ const BlogPostTemplate = ({ data, location }) => {
             itemProp="articleBody"
           />
         </article>
-        <Subscriber substackUrl={data.site.siteMetadata.social.substack} />
         <SocialShare
           fullURL={fullURL}
           title={post.frontmatter.title}
@@ -173,9 +171,6 @@ export const pageQuery = graphql`
         author {
           name
           info
-        }
-        social {
-          substack
         }
       }
     }

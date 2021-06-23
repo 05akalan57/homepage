@@ -1,8 +1,6 @@
 import React from "react"
 
-import FacebookIcon from "../../assets/icons/facebook.svg"
 import TwitterIcon from "../../assets/icons/twitter.svg"
-import LinkedinIcon from "../../assets/icons/linkedin.svg"
 import HeartIcon from "../../assets/icons/heart.svg"
 import Copy from "../../assets/icons/copy.svg"
 
@@ -23,25 +21,11 @@ export default function SocialShare({ fullURL, title, onLike, like }) {
     <div className="bottom-article">
       <div className="share-post">
         <a
-          href={`https://twitter.com/intent/tweet?url=${fullURL}&via=beratbozkurt0&text=${title}`}
+          href={`https://twitter.com/intent/tweet?url=${fullURL}&text=${title}`}
           target="_blank"
           rel="noreferrer"
         >
           <TwitterIcon width="21" height="21" fill="#3294da" />
-        </a>
-        <a
-          href={`https://www.linkedin.com/sharing/share-offsite/?url=${fullURL}`}
-          target="_blank"
-          rel="noreferrer"
-        >
-          <LinkedinIcon width="21" height="21" fill="#1966c2" />
-        </a>
-        <a
-          href={`https://www.facebook.com/sharer/sharer.php?u=${fullURL}`}
-          target="_blank"
-          rel="noreferrer"
-        >
-          <FacebookIcon width="21" height="21" fill="#1B77F2" />
         </a>
         <Copy
           onClick={copyClipboard}

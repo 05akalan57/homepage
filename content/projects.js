@@ -1,34 +1,34 @@
 module.exports = [
   {
-    name: "Davetiyem.co",
+    name: "hls-player-chat",
     description:
-      "Evlenmeyi düşünen çiftlerin dijital düğün davetiyesini oluşturabildiği bir platform.",
-    keywords: ["React", "Next.js", "Node.js", "PostgreSQL"],
-    url: "https://github.com/berat/Davetiyem.co-React",
-    icon: "📎",
+      "Arkadaşlarınızla toplanıp hem sohbet edip hem film izliyebileceğiniz bir platform.",
+    keywords: ["Vue.JS", "Firebase", "Video.js", "Tailwind"],
+    url: "https://github.com/05akalan57/hls-player-chat",
+    icon: "💬",
   },
   {
-    name: "Homepage",
+    name: "todo-list",
     description:
-      "Kendi kişisel blogum için hazırlamış olduğum açık kaynak gatsby projesi.",
-    keywords: ["Gatsby", "React", "Next.js"],
-    url: "https://github.com/berat/homepage",
-    icon: "🏠",
+      "Yapacaklarınızı ve tamamladığınız görevleri kontrol edebileceğiniz bir todo-list uygulaması.",
+    keywords: ["Vue.js", "Firabase", "Bootstrap"],
+    url: "https://github.com/05akalan57/todo-list",
+    icon: "📝",
   },
   {
-    name: "WordBox",
+    name: "unsplash-search",
     description:
-      "İngilizce kelimeyi ezberlemeyi kolaylaştıran açık kaynak bir react native uygulama.",
-    keywords: ["React Native", "Figma"],
-    url: "https://github.com/berat/wordBox-react-native",
-    icon: "🃏",
+      "Unsplash fotoğraf paylaşma platformunda bulunan kullanıcıların kullanıcı adlarından attığı resimleri çeken bir araç.",
+    keywords: ["Vue.js", "Axios.js", "Bootstrap"],
+    url: "https://github.com/05akalan57/unsplash-search",
+    icon: "🔍",
   },
   {
-    name: "Covid App",
+    name: "guest-web-chat",
     description:
-      "Covid ile genel bilgilerin gösterildiği basit bir react native uygulaması.",
-    keywords: ["React Native"],
-    url: "https://github.com/berat/covid-app-react-native",
-    icon: "🦠",
+      "Herkese açık sohbet edebileceğiniz resim paylaşma gibi özellikleri bulunan bir sohbet uygulaması.",
+    keywords: ["Firebase", "Bootstrap"],
+    url: "https://github.com/05akalan57/guest-web-chat",
+    icon: "💬",
   },
 ]

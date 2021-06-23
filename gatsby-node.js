@@ -3,11 +3,6 @@ const { createFilePath } = require(`gatsby-source-filesystem`)
 
 exports.createPages = async ({ graphql, actions, reporter }) => {
   const { createPage } = actions
-
-  // Define a template for blog post
-  const blogPost = path.resolve(`./src/templates/blog-post.js`)
-
-  // Get all markdown blog posts sorted by date
   const result = await graphql(
     `
       {
@@ -34,7 +29,7 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
   )
   if (result.errors) {
     reporter.panicOnBuild(
-      `There was an error loading your blog posts`,
+      `Blog gönderileriniz yüklenirken bir hata oluştu`,
       result.errors
     )
     return
@@ -48,7 +43,7 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
       var nextPostId = index === all.length - 1 ? null : all[index + 1].id
       createPage({
         path: "blog" + post.fields.slug,
-        component: blogPost,
+        component: path.resolve(`./src/templates/blog-post.js`),
         context: {
           slug: post.fields.slug,
           previousPostId,
@@ -76,12 +71,6 @@ exports.onCreateNode = ({ node, actions, getNode }) => {
 exports.createSchemaCustomization = ({ actions }) => {
   const { createTypes } = actions
 
-  // Explicitly define the siteMetadata {} object
-  // This way those will always be defined even if removed from gatsby-config.js
-
-  // Also explicitly define the Markdown frontmatter
-  // This way the "MarkdownRemark" queries will return `null` even when no
-  // blog posts are stored inside "content/blog" instead of returning an error
   createTypes(`
     type SiteSiteMetadata {
       author: Author

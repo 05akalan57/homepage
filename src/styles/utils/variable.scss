@@ -1,13 +1,13 @@
 // TYPOGRAPHY
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&display=swap");
 
-$font-body: system-ui, system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji;
-$font-heading: 'Playfair Display', serif;
+$font-body: system-ui, system-ui, -apple-system, Segoe UI, Roboto, Helvetica,
+  Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji;
+$font-heading: "Playfair Display", serif;
 
 $font-size-root: 100%;
 $font-size-base: 1rem;
 $line-height: 1.625;
-
 
 $weight-thin: 200;
 $weight-light: 300;
@@ -15,13 +15,12 @@ $weight-normal: 400;
 $weight-semibold: 500;
 $weight-bold: 600;
 
-
 // COLOR
 
 $main: #262b2d;
 $primary: #d46132;
 $primaryOffset: #e68157;
-$secondary : #3692a2;
+$secondary: #3692a2;
 $text: #405058;
 $background: #ffffff;
 $border: #ebebeb;
@@ -68,10 +67,8 @@ $full-size: 920px;
 $sidebar-size: 350px;
 $post-size: 980px;
 
-
 // EXTRAS
 
 $radius-small: 5px;
 
 $box-shadow: 1px 1px 2px 0px rgba(0, 0, 0, 0.1);
-

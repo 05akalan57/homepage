@@ -10,7 +10,7 @@ const NotFoundPage = ({ data, location }) => {
   return (
     <section id="page">
       <Layout location={location} title={siteTitle}>
-        <SEO title="404: Not Found" />
+        <SEO title="404: Bulunamadı" />
         <section id="not-found">
           <h1>
             404: Bulunamadı{" "}

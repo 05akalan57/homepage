@@ -16,31 +16,18 @@ const About = ({ data, location }) => {
         <Welcome />
         <section id="page-content">
           <p>
-            Yaklaşık 12 yaşlarında yazılıma başlamama rağmen yaklaşık olarak son
-            1-2 senedir çalışıyorum. Bu kadar erken başladığım için az çok neler
-            var neler yok bilimiyorum ve yolumu belirlemek daha kolay oluyor.
-            Tabii bazı şeyleri kestiremeseniz de yolda öğrendikleriniz var ki
-            onlar en değerlileri oluyor. Neyse burası <b>"Hakkımda"</b> sayfası,
-            kendimize gelelim{" "}
-            <span role="img" aria-label="smile">
-              😄
-            </span>
+            Merhaba ben Muhammet Emin AKALAN 19 (31.10.2001) yaşındayım.
+            Amasya'da yaşıyorum ve Şuanda Sakarya Uygulamalı Bilimler
+            Üniversitesi Bilgisayar Programcılığı öğrencisiyim. Sanırım yazılıma
+            8.sınıfta başladım diyebilirim.
           </p>
           <p>
-            Lise zamanlarda küçük bir ajans, freelance gibi bir kaç yerde
-            çalıştım. <i>Davetiyem.co</i> adında bir girişim kurdum ve yaklaşık
-            1.5 yıl hayattaydı. Sonrasında beyaz bayrağı çekip kapattığıma dair
-            bir yazı yayımladım. Benim için gerçekten güzel bir tecrübeydi.
-          </p>
-          <p>
-            Önümüzdeki 5 ya da 10 sene içerisinde beni global bir şirket ya da
-            kendi şirketimde dünyanın herhangi bir yerinde hobimi (işimi)
-            yaparken göreceksiniz.
+            Şuanlık hakkımda söylenebilecek pek bir şey yok ama inşâAllah yeni
+            deneyimlerim oldukca bu sayfayı zamanla doldurmayı planlıyorum.
           </p>
           <p>
             Yazıyorum çünkü öğrendiklerimi, düşündüklerimi ve sevdiklerimi
-            paylaşmayı seviyorum. Burada benden bir tutam kodlar, projeler,
-            düşünceler ve fotoğraflar bulacaksınız.
+            paylaşmayı seviyorum.
           </p>
         </section>
       </Layout>

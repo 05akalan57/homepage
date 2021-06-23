@@ -40,7 +40,6 @@
   animation-name: $name;
 }
 
-
 @include keyframes(fadeInUp) {
   from {
     transform: translate3d(0, 100px, 0);
@@ -65,5 +64,5 @@
   }
 }
 @mixin waited {
-  @include animate(opacity, .5s, both);
+  @include animate(opacity, 0.5s, both);
 }

@@ -1,19 +1,14 @@
 {
-  "name": "beratbozkurt-net-blog",
-  "private": true,
+  "name": "homepage",
   "description": "personal blog with gatsby",
   "version": "0.1.0",
-  "author": "Berat Bozkurt <me@beratbozkurt.net>",
-  "bugs": {
-    "url": "https://github.com/berat/beratbozkurt.net"
-  },
+  "author": "Muhammet Emin AKALAN <05akalan57@gmail.com>",
   "dependencies": {
     "@akr4/gatsby-plugin-og-image": "^1.0.5",
     "autoprefixer": "^9.8.6",
     "gatsby": "^2.26.1",
     "gatsby-image": "^2.5.0",
     "gatsby-plugin-feed": "^2.7.0",
-    "gatsby-plugin-google-analytics": "^2.5.0",
     "gatsby-plugin-manifest": "^2.6.1",
     "gatsby-plugin-offline": "^3.4.0",
     "gatsby-plugin-printer": "1.0.8",
@@ -47,17 +42,6 @@
   },
   "devDependencies": {
     "prettier": "2.1.2"
-  },
-  "homepage": "https://github.com/berat/beratbozkurt.net#readme",
-  "keywords": [
-    "gatsby",
-    "homepage,"
-  ],
-  "license": "0BSD",
-  "main": "n/a",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/berat/beratbozkurt.net.git"
   },
   "scripts": {
     "build": "yarn format && gatsby build",
