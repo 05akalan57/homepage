@@ -21,7 +21,7 @@ export default function Footer() {
   return (
     <footer>
       <nav id="social">
-        <a href={social.twitter} target="_blank" rel="me noreferrer">
+        <a href={social.twitter} target="_blank" rel="noreferrer">
           twitter
         </a>
         <a href={social.github} target="_blank" rel="noreferrer">

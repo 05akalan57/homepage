@@ -6,9 +6,8 @@ import Layout from "../components/layout.js"
 import SEO from "../components/seo.js"
 import BlogList from "../components/index/blogList.js"
 
-const About = ({ data, location }) => {
+const BlogPage = ({ data }) => {
   const [isFilter, setFilter] = useState("Tümü")
-  const siteTitle = data.site.siteMetadata?.title || `Title`
 
   const posts = data.blog.nodes
   const categories = ["Tümü", "Yazılım", "Kişisel"]
@@ -20,7 +19,7 @@ const About = ({ data, location }) => {
 
   if (posts.length === 0) {
     return (
-      <Layout location={location} title={siteTitle}>
+      <Layout>
         <SEO title={"Blog"} />
         <p>
           Blog yazısı bulunamadı. "content/blog"a (veya
@@ -33,7 +32,7 @@ const About = ({ data, location }) => {
 
   return (
     <section id="page">
-      <Layout location={location} title={siteTitle}>
+      <Layout>
         <SEO title={"Blog"} />
         <section id="blog-page">
           <section className="category-filter">
@@ -60,15 +59,10 @@ const About = ({ data, location }) => {
   )
 }
 
-export default About
+export default BlogPage
 
 export const pageQuery = graphql`
   query {
-    site {
-      siteMetadata {
-        title
-      }
-    }
     blog: allMarkdownRemark(
       sort: { fields: [frontmatter___date], order: DESC }
       filter: { fileAbsolutePath: { regex: "//blog//" } }

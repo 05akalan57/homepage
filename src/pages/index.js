@@ -7,14 +7,13 @@ import BlogList from "../components/index/blogList.js"
 import ProjectList from "../components/index/projectList.js"
 import Right from "../assets/icons/arrow-right.svg"
 
-const BlogIndex = ({ data, location }) => {
-  const siteTitle = data.site.siteMetadata?.indexTitle || `Title`
-
+const IndexPage = ({ data }) => {
+  const siteTitle = data.site.siteMetadata?.indexTitle
   const posts = data.blog.nodes
 
   if (posts.length === 0) {
     return (
-      <Layout location={location}>
+      <Layout>
         <SEO title={siteTitle} />
         <p>
           Blog yazısı bulunamadı. "content/blog"a (veya gatsby-config.js'de
@@ -26,7 +25,7 @@ const BlogIndex = ({ data, location }) => {
   }
 
   return (
-    <Layout location={location} isIndex>
+    <Layout isIndex>
       <section id="index">
         <SEO title={siteTitle} />
         <section className="all-post-list">
@@ -47,7 +46,7 @@ const BlogIndex = ({ data, location }) => {
   )
 }
 
-export default BlogIndex
+export default IndexPage
 
 export const pageQuery = graphql`
   query {
