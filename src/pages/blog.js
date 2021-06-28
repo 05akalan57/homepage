@@ -10,7 +10,7 @@ const BlogPage = ({ data }) => {
   const [isFilter, setFilter] = useState("Tümü")
 
   const posts = data.blog.nodes
-  const categories = ["Tümü", "Yazılım", "Kişisel"]
+  const categories = ["Tümü", "Yazılım"]
 
   const filterByCategory =
     isFilter && isFilter !== "Tümü"

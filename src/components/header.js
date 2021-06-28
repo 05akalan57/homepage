@@ -29,11 +29,12 @@ const Header = () => {
       <ThemeContext.Consumer>
         {theme => (
           <nav id="navigation">
-            <Link activeClassName="active" to="/about">
-              hakkımda
-            </Link>
             <Link activeClassName="active" to="/blog">
-              blog
+              Yazılar
+            </Link>
+            {/* <Link disabled to="/myLearned"> */}
+            <Link disabled>
+              Öğrendiklerim
             </Link>
             <button onClick={theme.toggleBlack}>
               {!theme.black ? (
