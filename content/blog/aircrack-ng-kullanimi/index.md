@@ -2,7 +2,7 @@
 title: "Aircrack-ng Kullanımı"
 date: "2021-06-28"
 coverImage: "./cover.jpg"
-category: ["Yazılım"]
+category: ["Siber Güvenlik"]
 ---
 
 Aircrack kablosuz ağlara saldırmanıza ve savunmanıza yardımcı olan bir yazılım paketidir. Aircrack tek bir araç değil, her biri belirli bir işlevi yerine getiren bütün bir araçların toplamıdır. Bu araçlar, detector, packet sniffer, WEP/WPA cracker vb. İçerir

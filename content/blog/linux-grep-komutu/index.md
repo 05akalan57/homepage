@@ -2,7 +2,7 @@
 title: "Linux grep komutu?"
 date: "2021-06-19"
 coverImage: "./cover.jpg"
-category: ["Yazılım"]
+category: ["Linux"]
 ---
 
 Grep, temel bir Linux ve Unix komutudur. Belirli bir dosyadaki metin ve dizeleri aramak için kullanılır. Başka bir deyişle, grep komutu, verilen dosyada, verilen dizeler veya kelimelerle eşleşme içeren satırları arar. Geliştiriciler ve sistem yöneticileri için Linux ve Unix benzeri sistemlerde en kullanışlı komutlardan biridir. Linux veya Unix benzeri bir sistemde grep'in nasıl kullanılacağını görelim.
